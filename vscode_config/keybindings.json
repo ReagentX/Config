@@ -2,28 +2,85 @@
 [
     {
         "key": "cmd+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+b",
         "command": "python.execInTerminal"
     },
     {
-        "key": "cmd+l",
-        "command": "workbench.action.terminal.new"
+        "key": "alt+space",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+shift+`",
-        "command": "-workbench.action.terminal.new"
+        "key": "ctrl+space",
+        "command": "-editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
     },
     {
-        "key": "f4",
-        "command": "workbench.action.debug.continue",
-        "when": "inDebugMode"
+        "key": "alt+escape",
+        "command": "-editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
     },
     {
-        "key": "f5",
-        "command": "-workbench.action.debug.continue",
-        "when": "inDebugMode"
+        "key": "cmd+1",
+        "command": "workbench.action.openEditorAtIndex1"
     },
     {
-        "key": "f4",
+        "key": "cmd+2",
+        "command": "workbench.action.openEditorAtIndex2"
+    },
+    {
+        "key": "cmd+3",
+        "command": "workbench.action.openEditorAtIndex3"
+    },
+    {
+        "key": "cmd+4",
+        "command": "workbench.action.openEditorAtIndex4"
+    },
+    {
+        "key": "cmd+5",
+        "command": "workbench.action.openEditorAtIndex5"
+    },
+    {
+        "key": "cmd+6",
+        "command": "workbench.action.openEditorAtIndex6"
+    },
+    {
+        "key": "cmd+7",
+        "command": "workbench.action.openEditorAtIndex7"
+    },
+    {
+        "key": "cmd+8",
+        "command": "workbench.action.openEditorAtIndex8"
+    },
+    {
+        "key": "cmd+9",
+        "command": "workbench.action.openEditorAtIndex9"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "ctrl+2",
+        "command": "workbench.action.focusSecondEditorGroup"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "workbench.action.focusThirdEditorGroup"
+    },
+    {
+        "key": "cmd+b",
+        "command": "workbench.action.debug.run"
+    },
+    {
+        "key": "ctrl+f5",
+        "command": "-workbench.action.debug.run"
+    },
+    {
+        "key": "shift+cmd+b",
         "command": "workbench.action.debug.start",
         "when": "!inDebugMode"
     },
@@ -31,22 +88,13 @@
         "key": "f5",
         "command": "-workbench.action.debug.start",
         "when": "!inDebugMode"
+    },
+    {
+        "key": "shift+cmd+b",
+        "command": "-workbench.action.tasks.build"
+    },
+    {
+        "key": "cmd+]",
+        "command": "workbench.action.quickOpenTerm"
     }
 ]
-
-#include <stdio.h>
-
-int main(void)
-{
-  int i, j, n;
-  
-  for (i = 0; i < 11; i++) {
-    for (j = 1; j < 11; j++) {
-      n = 10*i + j - 1;
-      if (n > 108) break;
-      printf("\033[%dm %3d\033[m", n, n);
-    }
-    printf("\n");
-  }
-  return (0);
-}
