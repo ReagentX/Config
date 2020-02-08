@@ -11,11 +11,11 @@ For keybindings, create a symlink to this file from:
 
 ### Blueberry Banana
 
-![](iterm_themes/screenshots/Banana Blueberry.png)
+![](iterm_themes/screenshots/BananaBlueberry.png)
 
 ### Blue Matrix
 
-![](iterm_themes/screenshots/Blue Matrix.png)
+![](iterm_themes/screenshots/BlueMatrix.png)
 
 ### Cyberdyne
 
@@ -27,4 +27,4 @@ For keybindings, create a symlink to this file from:
 
 ### Scarlet Protocol
 
-![](iterm_themes/screenshots/Scarlet Protocol.png)
+![](iterm_themes/screenshots/ScarletProtocol.png)
