@@ -1,0 +1,17 @@
+{
+    "workbench.colorTheme": "Blueberry Banana",
+    "editor.renderControlCharacters": true,
+    "window.zoomLevel": 0,
+    "editor.fontFamily": "Fira Code, Menlo",
+    "editor.renderWhitespace": "none",
+    "editor.fontLigatures": true,
+    "python.pythonPath": "/usr/local/bin/python3",
+    "git.confirmSync": false,
+    "breadcrumbs.enabled": true,
+    "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.cursorStyle": "underline",
+    "editor.fontSize": 13,
+    "editor.minimap.showSlider": "always",
+    // "workbench.fontAliasing": "antialiased"
+}

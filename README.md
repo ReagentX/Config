@@ -1,13 +1,14 @@
 # Config
 My dev configuration files
 
-## Keybindings
+## VSCode Setup
 
-For keybindings, create a symlink to this file from:
+For keybindings and settings, create a symlinks to the files like so:
 
-    ~/Library/Application Support/Code/User/keybindings.json
+    chris@ChristophersMBP ~ % ln -s /Users/chris/Documents/Config/vscode_config/settings.json  /Users/chris/Library/Application\ Support/Code/User/settings.json
+    chris@ChristophersMBP ~ % ln -s /Users/chris/Documents/Config/vscode_config/settings.json  /Users/chris/Library/Application\ Support/Code/User/settings.json
 
-## Themes
+## iTerm 2 Themes
 
 ### Blueberry Banana
 

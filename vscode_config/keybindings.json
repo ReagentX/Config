@@ -1,0 +1,52 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "cmd+b",
+        "command": "python.execInTerminal"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.terminal.new"
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "-workbench.action.terminal.new"
+    },
+    {
+        "key": "f4",
+        "command": "workbench.action.debug.continue",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "f5",
+        "command": "-workbench.action.debug.continue",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "f4",
+        "command": "workbench.action.debug.start",
+        "when": "!inDebugMode"
+    },
+    {
+        "key": "f5",
+        "command": "-workbench.action.debug.start",
+        "when": "!inDebugMode"
+    }
+]
+
+#include <stdio.h>
+
+int main(void)
+{
+  int i, j, n;
+  
+  for (i = 0; i < 11; i++) {
+    for (j = 1; j < 11; j++) {
+      n = 10*i + j - 1;
+      if (n > 108) break;
+      printf("\033[%dm %3d\033[m", n, n);
+    }
+    printf("\n");
+  }
+  return (0);
+}
