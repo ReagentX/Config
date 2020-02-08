@@ -13,5 +13,6 @@
     "terminal.integrated.cursorStyle": "underline",
     "editor.fontSize": 13,
     "editor.minimap.showSlider": "always",
+    "git.enableCommitSigning": true,
     // "workbench.fontAliasing": "antialiased"
 }
