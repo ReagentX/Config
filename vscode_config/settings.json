@@ -14,5 +14,6 @@
     "editor.fontSize": 13,
     "editor.minimap.showSlider": "always",
     "git.enableCommitSigning": true,
+    "terminal.integrated.shell.osx": "/bin/zsh",
     // "workbench.fontAliasing": "antialiased"
 }
