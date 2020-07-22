@@ -11,7 +11,7 @@ For keybindings and settings, create a symlinks to the files like so:
 
 ## `tmux` Note
 
-Install [tpm](https://github.com/tmux-plugins/tpm) to manage plugins
+Install [tpm](https://github.com/tmux-plugins/tpm) to manage plugins.
 
 ## iTerm 2 Themes
 
