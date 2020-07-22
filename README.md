@@ -1,12 +1,17 @@
 # Config
 My dev configuration files
 
-## VSCode Setup
+## tmux +  VSCode Setup
 
 For keybindings and settings, create a symlinks to the files like so:
 
-    chris@ChristophersMBP ~ % ln -s /Users/chris/Documents/Config/vscode_config/settings.json  /Users/chris/Library/Application\ Support/Code/User/settings.json
-    chris@ChristophersMBP ~ % ln -s /Users/chris/Documents/Config/vscode_config/settings.json  /Users/chris/Library/Application\ Support/Code/User/settings.json
+    ~ % ln -s Config/vscode_config/settings.json  ~/Library/Application\ Support/Code/User/settings.json
+    ~ % ln -s Config/vscode_config/settings.json  ~/Library/Application\ Support/Code/User/settings.json
+    ~ % ln tmux_config/tmux.conf ~/.tmux.con
+
+## `tmux` Note
+
+Install [tpm](https://github.com/tmux-plugins/tpm) to manage plugins
 
 ## iTerm 2 Themes
 
