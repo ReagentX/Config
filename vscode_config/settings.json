@@ -18,5 +18,6 @@
     "debug.console.fontSize": 11,
     "markdown.preview.fontSize": 11,
     "terminal.integrated.fontSize": 11,
+    "python.analysis.typeCheckingMode": "basic",
     // "workbench.fontAliasing": "antialiased"
 }
