@@ -18,7 +18,6 @@
 	"diffEditor.ignoreTrimWhitespace": false,
 	"python.languageServer": "Pylance",
 	"python.analysis.typeCheckingMode": "basic",
-    "markdown.preview.fontSize": 12,
-    "python.analysis.typeCheckingMode": "basic",
+    "markdown.preview.fontSize": 12
     // "workbench.fontAliasing": "antialiased"
 }
