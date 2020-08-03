@@ -6,7 +6,7 @@ My dev configuration files
 For keybindings and settings, create a symlinks to the files like so:
 
     ~ % ln -s vscode_config/settings.json  ~/Library/Application\ Support/Code/User/settings.json
-    ~ % ln -s vscode_config/settings.json  ~/Library/Application\ Support/Code/User/settings.json
+    ~ % ln -s vscode_config/keybindings.json  ~/Library/Application\ Support/Code/User/keybindings.json
     ~ % ln tmux_config/tmux.conf ~/.tmux.conf
     ~ % ln alacritty_config/alacritty.yml ~/.alacritty.yml
 
