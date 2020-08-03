@@ -14,10 +14,11 @@
     "editor.minimap.showSlider": "always",
     "git.enableCommitSigning": true,
     "terminal.integrated.shell.osx": "/bin/zsh",
-    "editor.fontSize": 11,
-    "debug.console.fontSize": 11,
-    "markdown.preview.fontSize": 11,
-    "terminal.integrated.fontSize": 11,
+    "editor.minimap.size": "fit",
+	"diffEditor.ignoreTrimWhitespace": false,
+	"python.languageServer": "Pylance",
+	"python.analysis.typeCheckingMode": "basic",
+    "markdown.preview.fontSize": 12,
     "python.analysis.typeCheckingMode": "basic",
     // "workbench.fontAliasing": "antialiased"
 }
