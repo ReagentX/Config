@@ -1,7 +1,7 @@
 {
     "workbench.colorTheme": "Blueberry Banana",
     "editor.renderControlCharacters": true,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "editor.fontFamily": "Fira Code, Menlo",
     "editor.renderWhitespace": "none",
     "editor.fontLigatures": true,
