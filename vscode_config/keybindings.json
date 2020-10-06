@@ -9,7 +9,7 @@
         "command": "python.execInTerminal"
     },
     {
-        "key": "alt+space",
+        "key": "ctrl+space",
         "command": "editor.action.triggerSuggest",
         "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
     },
@@ -97,5 +97,10 @@
         "key": "cmd+]",
         "command": "workbench.action.quickOpenTerm",
         "when": "!editorTextFocus"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "-toggleSuggestionDetails",
+        "when": "suggestWidgetVisible && textInputFocus"
     },
 ]
