@@ -1,30 +1,84 @@
 layout {
     default_tab_template {
-        children
-    }
-    tab focus=true split_direction="Horizontal" name="Home" {
         pane size=1 borderless=true {
             plugin location="zellij:tab-bar"
         }
-        pane split_direction="Vertical" {
-            pane split_direction="Horizontal" {
-                pane name="Resources" command="htop"
-                pane name="Utility" focus=true
-            }
-            pane split_direction="Horizontal" {
-                pane name="Scratch Pad" command="hx"
-                pane name="Broot" command="broot"
-            }
-        }
-        pane size=2 borderless=true {
+        children
+        pane size=1 borderless=true {
             plugin location="zellij:status-bar"
         }
     }
-    tab split_direction="Horizontal" name="Logria" {
-        pane size=1 borderless=true {
-            plugin location="zellij:tab-bar"
+
+    tab focus=true split_direction="Horizontal" name="Home" {
+        pane split_direction="Horizontal" {
+            pane split_direction="Vertical" {
+                pane name="Resources" command="htop"
+                pane name="Scratch Pad" command="hx"
+            }
+            pane split_direction="Vertical" {
+                pane name="Python" command="python"
+                pane name="TODO"
+            }
+            pane split_direction="Vertical" {
+                pane name="Utility" focus=true
+                pane name="Broot" command="broot"
+            }
         }
-        pane split_direction="Vertical" {
+    }
+
+    tab split_direction="Horizontal" name="imessage-exporter" {
+        pane split_direction="Horizontal" {
+            pane split_direction="Vertical" {
+                pane name="Editor" size="65%" cwd="/Users/chris/Documents/Code/Rust/imessage-exporter" command="hx" {
+                    args "."
+                }
+                pane name="Tests" size="35%" cwd="/Users/chris/Documents/Code/Rust/imessage-exporter" command="cargo" {
+                    args "test" "-q"
+                }
+            }
+            pane split_direction="Vertical" {
+                pane name="Claude" size="50%" cwd="/Users/chris/Documents/Code/Rust/imessage-exporter" command="claude"
+                pane name="Utility" size="50%" cwd="/Users/chris/Documents/Code/Rust/imessage-exporter" focus=true
+            }
+        }
+    }
+
+    tab split_direction="Horizontal" name="crabstep" {
+        pane split_direction="Horizontal" {
+            pane split_direction="Vertical" {
+                pane name="Editor" size="65%" cwd="/Users/chris/Documents/Code/Rust/crabstep" command="hx" {
+                    args "."
+                }
+                pane name="Tests" size="35%" cwd="/Users/chris/Documents/Code/Rust/crabstep" command="cargo" {
+                    args "test" "-q"
+                }
+            }
+            pane split_direction="Vertical" {
+                pane name="Claude" size="50%" cwd="/Users/chris/Documents/Code/Rust/crabstep" command="claude"
+                pane name="Utility" size="50%" cwd="/Users/chris/Documents/Code/Rust/crabstep" focus=true
+            }
+        }
+    }
+
+    tab split_direction="Horizontal" name="crabapple" {
+        pane split_direction="Horizontal" {
+            pane split_direction="Vertical" {
+                pane name="Editor" size="65%" cwd="/Users/chris/Documents/Code/Rust/crabapple" command="hx" {
+                    args "."
+                }
+                pane name="Tests" size="35%" cwd="/Users/chris/Documents/Code/Rust/crabapple" command="cargo" {
+                    args "test" "-q"
+                }
+            }
+            pane split_direction="Vertical" {
+                pane name="Claude" size="50%" cwd="/Users/chris/Documents/Code/Rust/crabapple" command="claude"
+                pane name="Utility" size="50%" cwd="/Users/chris/Documents/Code/Rust/crabapple" focus=true
+            }
+        }
+    }
+
+    tab split_direction="Horizontal" name="Logria" {
+        pane split_direction="Horizontal" {
             pane split_direction="Vertical" {
                 pane name="Editor" size="65%" cwd="/Users/chris/Documents/Code/Rust/logria" command="hx" {
                     args "."
@@ -33,34 +87,16 @@ layout {
                     args "test"
                 }
             }
-        }
-        pane size=2 borderless=true {
-            plugin location="zellij:status-bar"
-        }
-    }
-    tab split_direction="Horizontal" name="imessage-exporter" {
-        pane size=1 borderless=true {
-            plugin location="zellij:tab-bar"
-        }
-        pane split_direction="Vertical" {
             pane split_direction="Vertical" {
-                pane name="Editor" size="65%" cwd="/Users/chris/Documents/Code/Rust/imessage-exporter" command="hx" {
-                    args "."
-                }
-                pane name="Tests" size="35%" cwd="/Users/chris/Documents/Code/Rust/imessage-exporter" command="cargo" {
-                    args "test"
-                }
+                pane name="Claude" size="50%" cwd="/Users/chris/Documents/Code/Rust/logria" command="claude"
+                pane name="Utility" size="50%" cwd="/Users/chris/Documents/Code/Rust/logria" focus=true
             }
         }
-        pane size=2 borderless=true {
-            plugin location="zellij:status-bar"
-        }
     }
-        tab split_direction="Horizontal" name="glicko2" {
-        pane size=1 borderless=true {
-            plugin location="zellij:tab-bar"
-        }
-        pane split_direction="Vertical" {
+
+
+    tab split_direction="Horizontal" name="glicko2" {
+        pane split_direction="Horizontal" {
             pane split_direction="Vertical" {
                 pane name="Editor" size="65%" cwd="/Users/chris/Documents/Code/Rust/glicko2" command="hx" {
                     args "."
@@ -69,16 +105,15 @@ layout {
                     args "test"
                 }
             }
-        }
-        pane size=2 borderless=true {
-            plugin location="zellij:status-bar"
+            pane split_direction="Vertical" {
+                pane name="Claude" size="50%" cwd="/Users/chris/Documents/Code/Rust/glicko2" command="claude"
+                pane name="Utility" size="50%" cwd="/Users/chris/Documents/Code/Rust/glicko2" focus=true
+            }
         }
     }
-        tab split_direction="Horizontal" name="path-tracer" {
-        pane size=1 borderless=true {
-            plugin location="zellij:tab-bar"
-        }
-        pane split_direction="Vertical" {
+
+    tab split_direction="Horizontal" name="path-tracer" {
+        pane split_direction="Horizontal" {
             pane split_direction="Vertical" {
                 pane name="Editor" size="65%" cwd="/Users/chris/Documents/Code/Rust/path-tracer" command="hx" {
                     args "."
@@ -87,11 +122,13 @@ layout {
                     args "test"
                 }
             }
-        }
-        pane size=2 borderless=true {
-            plugin location="zellij:status-bar"
+            pane split_direction="Vertical" {
+                pane name="Claude" size="50%" cwd="/Users/chris/Documents/Code/Rust/path-tracer" command="claude"
+                pane name="Utility" size="50%" cwd="/Users/chris/Documents/Code/Rust/path-tracer" focus=true
+            }
         }
     }
 }
+
 session_name "Desktop"
 attach_to_session true
