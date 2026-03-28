@@ -9,9 +9,10 @@ For keybindings and settings, create a symlinks to the files like so:
     ~ % ln -s vscode_config/settings.json  ~/Library/Application\ Support/Code/User/settings.json
     ~ % ln -s vscode_config/keybindings.json  ~/Library/Application\ Support/Code/User/keybindings.json
     ~ % ln tmux_config/tmux.conf ~/.tmux.conf
-    ~ % ln alacritty_config/alacritty.yml ~/.alacritty.yml
+    ~ % ln alacritty_config/alacritty.toml ~/.config/alacritty/alacritty.toml
     ~ % ln zellij/config.kdl ~/.config/zellij
     ~ % ln zellij/layouts/home.kdl ~/.config/zellij/layouts
+    ~ % ln ghostty/config.ghostty  ~/Library/Application\ Support/com.mitchellh.ghostty/config
 
 ## `tmux` Note
 
